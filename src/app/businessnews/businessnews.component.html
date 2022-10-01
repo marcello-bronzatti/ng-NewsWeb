@@ -1,0 +1,12 @@
+<div class="container-fluid mt-5">
+    <h4>Business</h4>
+    <div class="row">
+        <div *ngFor="let article of articles" class="col-lg-3 mt-3 mb-3">
+            <div class="box">
+                <img src="{{article.urlToImage}}" width="100%">
+                <h5 class="mt-2 mb-2">{{article.title}}</h5>
+                <a href="{{article.url}}" target="_blank" class="btn btn-dark btn-sm">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
